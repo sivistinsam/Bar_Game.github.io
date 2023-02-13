@@ -1,0 +1,99 @@
+/* Selects the root element of the document */
+:root {
+    --time-duration: 9s;
+}
+
+/* Setting the margin zero of the body so that there is no predefined space would be there */
+
+body {
+    margin: 0px;
+}
+
+/* The webkit-scrollbar is a CSS pseudo-element which affects the style of an element's scrollbar when it has overflow:scroll; set. */
+
+body::-webkit-scrollbar {
+    overflow: hidden;
+    display: none;
+}
+
+/* setting all the h3 element as margin 0px; */
+
+h3 {
+    margin: 0px;
+}
+
+/* styling start of the rod one */
+
+#rod-one {
+    position: absolute;
+    top: 0%;
+    background-color: crimson;
+    border: 2px solid black;
+    width: 20vw;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 5vh;
+    padding: 5px;
+    text-align: center;
+}
+
+/* styling end of the rod one */
+
+
+/* styling start of the second rod */
+
+#rod-two {
+    position: absolute;
+    bottom: 0%;
+    background-color: crimson;
+    border-radius: 20px;
+    ;
+    border: 2px solid black;
+    width: 20vw;
+    box-sizing: border-box;
+    height: 5vh;
+    padding: 5px;
+    text-align: center;
+}
+
+/* styling end of the second rod */
+
+/* styling start of the Ball */
+
+#ball {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-radius: 50%;
+    background-image: radial-gradient(green 0%, black 221%);
+    box-sizing: border-box;
+}
+
+/* styling end of the Ball */
+
+/* setting the transition and transform the top right */
+.animate-top-right {
+    transition: transform linear var(--time-duration);
+    transform: translateX(2000px) translateY(-2000px);
+}
+
+/* setting the transition and transform the bottom right */
+
+.animate-bottom-right {
+    transition: transform linear var(--time-duration);
+    transform: translateX(2000px) translateY(2000px);
+}
+
+/* setting the transition and transform the top left */
+
+.animate-top-left {
+    transition: transform linear var(--time-duration);
+    transform: translateX(-2000px) translateY(-2000px);
+}
+
+/* setting the transition and transform the bottom left */
+
+.animate-bottom-left {
+    transition: transform linear var(--time-duration);
+    transform: translateX(-2000px) translateY(2000px);
+}
